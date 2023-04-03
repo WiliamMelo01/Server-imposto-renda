@@ -4,9 +4,9 @@ export class CalcularImpostoDto {
   @IsString()
   nome: string;
 
-  @IsNumber()
-  rendimentos: number;
+  @IsString()
+  rendimentos: string;
 
-  @IsNumber()
-  cpf: number;
+  @IsString()
+  cpf: string;
 }
