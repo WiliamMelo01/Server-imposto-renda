@@ -10,11 +10,11 @@ export class AppService {
     const aliquota = calculaAliquota(Number(rendimentos));
     const parcela = Number(calculaParcela(Number(rendimentos), aliquota));
     return {
-      cpf,
       nome,
+      cpf,
+      rendimentos: formataNumeroParaBRL(Number(rendimentos)),
       aliquota: aliquota + '%',
       parcela: formataNumeroParaBRL(parcela),
-      rendimentos: formataNumeroParaBRL(Number(rendimentos)),
     };
   }
 }
